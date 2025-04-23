@@ -43,7 +43,7 @@
 
 
     var swiper_carousel = new Swiper(".swiper-carousel", {
-      slidesPerView: 5,
+      slidesPerView: 2,
       spaceBetween: 30,
       pagination: {
         el: ".swiper-pagination",
@@ -59,6 +59,41 @@
         },
       },
     });
+
+    var review_swiper2 = new Swiper(".review-swiper2", {
+      slidesPerView: 3,
+      spaceBetween: 50,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },breakpoints: {
+        300: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+      },
+    });
+
+    var swiper_carousel2 = new Swiper(".swiper-carousel2", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        300: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+      },
+    });
+    
 
     var swiper_slideshow = new Swiper(".swiper-slideshow", {
       slidesPerView: 1,
